@@ -1,0 +1,24 @@
+<div class="author">
+    <h2 class="author__heading" id="search">Search Results <i class="bi bi-search" id="icon"></i></h2>
+</div>
+
+<section class="articles">
+
+    <ul class="article-ul">
+
+        <% if (data.length > 0) { %>
+        <% data.forEach(post => { %>
+            <li>
+                <a href="/post/<%= post._id %>" class="title">
+                    <span><%= post.title %></span>
+                </a>
+            </li>
+        <% }) %>
+        <% } else { %>
+            <img src="img/error.svg" alt="search error" width="300" height="300" style="margin-top: 30px;text-align: center;" id="search-img">
+            <p style="font-size: 1.5rem; color: #fff;"> <span style="color: red; text-align: center;" id="found">No search found!</span> <span id="try">Try searching again...</span></p>
+            <a href="/page" style="color: #fff;"><button class="action_btn" id="back-btn">Back</button></a>
+        <% } %> 
+        </ul>
+
+</section>

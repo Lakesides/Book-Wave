@@ -1,0 +1,29 @@
+
+<section class="articles">
+    <h2 class="article__heading"><div><span>Love and Justice</span></div></h2>
+    <div class="intro">
+    <h4 style="color: #fff; font-size: 1.2rem;"><span style="color: blue;">Author:</span> Anthony Odise</h4>
+    <br>
+    <p style="color: #fff; font-size: 1.2rem;">Status: <span style="color: lightgreen;">60% completed</span></p>
+    </div>
+    
+    <ul class="article-ul" id="design">
+
+        <% data.forEach(post => { %>
+        
+            <span id="change">
+                <a href="/post/<%= post._id %>" class="title">
+                    <span><%= post.title %></span>
+                </a>
+            </span>
+        <% }) %> 
+        </ul>
+
+        <% if (nextPage !== null) { %>
+            <a style="color: #fff; background-color: red; margin-right: 0.5rem;" href="/page" class="pagination"><i class="bi bi-arrow-left"></i>BACK</a>
+            <a style="color: #fff;" href="/story?page=<%= nextPage %>" class="pagination">NEXT CHAPTERS <i class="bi bi-arrow-right"></i></a> 
+        <% } %>
+
+ 
+
+</section>
