@@ -1,6 +1,6 @@
 <body>
    <div class="objectives">
-    <h1>Our <span style="color: blue; font-size: 40px;">Objectives</span></h1>
+    <h1>Our <span style="color: blue; font-size: 35px;">Objectives</span></h1>
     <!-- image slider -->
     <div class="slider">
         <div class="img-box">
@@ -13,47 +13,47 @@
             </div>
         </div>
         <div class="wordd">
-            <div id="wordd">Comfort</div>
+            <h2 id="wordd">Providing Comfort</h2>
         </div>
         <!-- Next and prev Buttons -->
         <div class="slide">
         <button class="btnn" id="prev"><i class="bi bi-chevron-left"></i></button>
-        <button class="btnn" id="next"><i class="bi bi-chevron-right"></i></button>
+        <button class="btnn" id="next" style="margin-left: 10px;"><i class="bi bi-chevron-right"></i></button>
         </div>
     </div>
    </div>
    
    <div class="objectives">
-    <h1>Our <span style="color: blue; font-size: 40px;">Webstore</span> Collection</h1>
+    <h1>Our <span style="color: blue; font-size: 35px;">Webstore</span> Collection</h1>
     </div>
-    <div class="image-el">
-        <img src="img/book4.jpg" alt="Love and justice" width="200" height="250">
-        <div class="text" style="margin-top: 10px;"><a href="/story" style="font-size: 1.5rem;">Love and Justice</a></div>
-        <div class="text"><i class="bi bi-star"></i>(4.5)</div>
-        <div class="text" style="margin-bottom: 10px;">Status: <span style="color: lightgreen;">Available</span></div>
-        <img src="img/book5.jpg" alt="Mystery of Clifford's high school" width="200" height="250">
-        <div class="text" style="margin-top: 10px;"><a href="/building" style="font-size: 1.5rem;">Clifford's High School</a></div>
-        <div class="text"><i class="bi bi-star"></i>(4.3)</div>
-        <div class="text" style="margin-bottom: 10px;">Status: <span style="color: yellow;">Ongoing</span></div>
-        <img src="img/book3.jpg" alt="The Robert's way" width="200" height="250">
-        <div class="text" style="margin-top: 10px;"><a href="/building" style="font-size: 1.5rem;">The Robert's Way</a></div>
-        <div class="text"><i class="bi bi-star"></i>(4.8)</div>
-        <div class="text" style="margin-bottom: 10px;">Status: <span style="color: red;">Unvailable</span></div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="items" id="image">
+        <img src="img/book4.jpg" alt="love and Justice" width="200" height="250">
+        <img src="img/book5.jpg" alt="clifford's high school" width="200" height="250" id="smaller">
+        <img src="img/book3.jpg" alt="the robert's way" width="200" height="250" id="smaller">
         <span id="add-more"><i class="bi bi-plus-lg"></i></span>
-        <div class="text-el">
-            <a href="/story" style="margin-left: 30px;">Love and Justice</a>
-            <a href="/building" style="margin-left: 85px;">Clifford's High School</a>
-            <a href="/building" style="margin-left: 82px;">The Robert's Way</a>
+    </div>
+</div>
+    <div class="items" id="small">
+        <div><a style="color: #fff;" href="/story">Love and Justice</a><p><i class="bi bi-star" style="color: yellow;"></i>(4.5)</p><p>Status: <span style="color: lightgreen;">Available</span></p></div>
+        <div><a style="color: #fff;" href="/building">Clifford's High School</a><p><i class="bi bi-star" style="color: yellow;"></i>(4.3)</p><p>Status: <span style="color: red;">Unvailable</span></p></div>
+        <div><a style="color: #fff;" href="/building">The Robert's Way</a><p><i class="bi bi-star" style="color: yellow;"></i>(4.8)</p><p>Status: <span style="color: red;">Unvailable</span></p></div>
+    </div>
+
+        <div class="text-el" style="margin-top: 10px;">
+            <a href="/story" style="margin-left: 44px;">Love and Justice</a>
+            <a href="/building" style="margin-left: 71px;">Clifford's High School</a>
+            <a href="/building" style="margin-left: 55px;">The Robert's Way</a>
         </div>
         <div class="text-el">
-            <a style="margin-left: 60px;"><i class="bi bi-star"></i>(4.5)</a>
-            <a style="margin-left: 190px;"><i class="bi bi-star"></i>(4.3)</a>
-            <a style="margin-left: 200px;"><i class="bi bi-star"></i>(4.8)</a>
+            <a style="margin-left: 70px;"><i class="bi bi-star"></i>(4.5)</a>
+            <a style="margin-left: 180px;"><i class="bi bi-star"></i>(4.3)</a>
+            <a style="margin-left: 170px;"><i class="bi bi-star"></i>(4.8)</a>
         </div>
         <div class="text-el">
-            <a style="margin-left: 30px;">Status: <span style="color: lightgreen;">Available</span></a>
-            <a style="margin-left: 93px;">Status: <span style="color: yellow;">Ongoing</span></a>
-            <a style="margin-left: 117px;">Status: <span style="color: red;">Unavailable</span></a>
+            <a style="margin-left: 45px;">Status: <span style="color: lightgreen;">Available</span></a>
+            <a style="margin-left: 90px;">Status: <span style="color: yellow;">Ongoing</span></a>
+            <a style="margin-left: 85px;">Status: <span style="color: red;">Unavailable</span></a>
         </div>
     </div>
 
@@ -102,27 +102,27 @@
     </div>
 
     <div class="container">
-        <h1 style="color: #fff; text-align: center; font-size: 40px; margin-top: 5rem;"><span style="color: blue;">Users</span> Comments</h1>
+        <h1 style="color: #fff; text-align: center; font-size: 35px; margin-top: 5rem;"><span style="color: blue;">Users</span> Comments</h1>
 
         <div class="items">
-            <div>
+            <div class="itemas">
                 <img src="img/mark.jpg" alt="mark" class="users" width="70" height="70">
-                <h2>Thomas Morillo</h2>
+                <h2 style="font-size: 1.2rem;">Thomas Morillo</h2>
                 <p style="margin-top: 20px;">BookWave is the perfect place to find my next great new read. The recommendations are always on point.</p>
             </div>
-            <div>
+            <div class="itemas">
                 <img src="img/johnson.jpg" alt="johnson" class="users" width="70" height="70">
-                <h2>Charles Shaifer</h2>
+                <h2 style="font-size: 1.2rem;">Charles Shaifer</h2>
                 <p style="margin-top: 20px;">I love that BookWave makes it easy to explore new genres and authors. I've discovered so many great books here.</p>
             </div>
-            <div>
+            <div class="itemas">
                 <img src="img/fiyin.jpg" alt="fiyin" class="users" width="70" height="70">
-                <h2>Zoey Selova</h2>
+                <h2 style="font-size: 1.2rem;">Zoey Selova</h2>
                 <p style="margin-top: 20px;">The community of readers on BookWave is really supportive and helpful. I love getting recommendations from other members and finding new books to love.</p>
             </div>
-            <div>
+            <div class="itemas">
                 <img src="img/tunde.jpg" alt="tunde" class="users" width="60" height="60">
-                <h2>Johnson Andrew</h2>
+                <h2 style="font-size: 1.2rem;">Johnson Andrew</h2>
                 <p style="margin-top: 20px;">BookWave is my go-to place for cozy reading. Their new books collection are amazing.</p>
             </div>
         </div>

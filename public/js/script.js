@@ -31,7 +31,7 @@ var i = 0;
 
 function prev() {
     document.querySelector("#word").textContent = "Comfort";
-    document.querySelector("#wordd").textContent = "Comfort";
+    document.querySelector("#wordd").textContent = "Providing Comfort";
     document.querySelector("#word-el").textContent = "Get curl up with a good book, and get lost in the pages of a captivating story. Escape the stresses of everyday life with a good book.";
     if (i <= 0) i = images.length;
     i--;
@@ -40,7 +40,7 @@ function prev() {
 
 function next() {
     document.querySelector("#word").textContent = "Delight";
-    document.querySelector("#wordd").textContent = "Delight";
+    document.querySelector("#wordd").textContent = "Providing Delight";
     document.querySelector("#word-el").textContent = "Discovering the latest release, explore your favorite genres, and find your next favorite author on bookwave.";
     if (i >= images.length - 1) i = -1;
     i++;
