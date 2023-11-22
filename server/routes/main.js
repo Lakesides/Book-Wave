@@ -64,13 +64,13 @@ const requireAuth = (req,res, next) => {
 // routes
 router.get("/", (req,res) => {
    res.render("home",  { 
-    title: "Book Wave", currentRoute: "/home", layout: welcomeLayout })
+    title: "Book Wave", currentRoute: "/home", layout: welcomeLayout }) 
 });
 
 router.get("/story", requireAuth, async (req,res) => {
     try {
         const locals = {
-            title: "Love and Justice",
+            title: "Clifford's High School", 
             description: "Simple Blog created with NodeJs, Express & MongoDb."
         }
 
